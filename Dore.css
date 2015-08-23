@@ -171,16 +171,17 @@ h1   { font-size: 0.1rem; } /* =16px */
 
 .filmContent{
 	max-width: 570px;
-	padding-top: 40px;
 	margin: 0px auto;
 	font-size: 0.875rem; /* =14px */
 	color: #263346;
-	padding-left:1.4em;
-	padding-right:1.4em;
+
 }
 
 .filmText{
 	
+	padding-top: 40px;
+	padding-left:1.4em;
+	padding-right:1.4em;
 	margin-bottom: 44px;
 	display: block;
 	margin-top: 0px;
@@ -237,7 +238,6 @@ padding-top: 50px;
 }
 
 @media (max-width: 500px){
-	body{background-color: green}
 	.tag, .topInfo {
 		float:none;
 		margin-top: 6px;
