@@ -32,7 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4em;
-	background-color: #2A394E;
+	/*background-color: #2A394E;*/
+	background-color: #263346;
 
 }
 ol, ul {
@@ -77,6 +78,7 @@ table {
 
 body { 
 	font-size: 0.875rem; /* =14px */
+	background-image: url('images/bg.png');
 } 	
 h1   { font-size: 0.1rem; } /* =16px */
 
@@ -264,12 +266,47 @@ padding-top: 50px;
 }
 
 
+#container.noBG{
+	background-color: transparent;
+	text-align: center;
+}
+
+.h1{
+	margin-top:240px;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.h2{
+	font-size: 14px;
+	opacity: 0.7;
+	margin-top: 14px;
+}
 
 
 
+#octagon {
+	width: 100px;
+	height: 100px;
+	background: #2A394E;
+	position: relative;
+	z-index: 10;
+}
 
 
-
+.o {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    padding: 5%;
+}
+.o:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform: rotate(45deg);
+    background: #2A394E;
+    content: '';
+}
 
 
 
