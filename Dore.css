@@ -144,10 +144,10 @@ h1   { font-size: 0.1rem; } /* =16px */
 	font-weight: 700;
 }
 
-.name:hover{
+/*.name:hover{
 	opacity: 0.9;
 	font-color: red;
-}
+}*/
 
 .author{
 	color: #ffffff;
