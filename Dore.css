@@ -93,16 +93,7 @@ h1   { font-size: 0.1rem; } /* =16px */
 	color: #ffffff;
 }
 
-.film{
-	background-color: #374760;
-	min-height:57px;
-	display: block;
-	width: 100%;
-	display: table;
-	border-bottom-width: 1px;	
-    border-style:solid;
-    border-bottom-color: #263346;
-}
+
 
 .filmOpen{
 	background-color: none;
@@ -110,33 +101,68 @@ h1   { font-size: 0.1rem; } /* =16px */
 	display: block;
 	width: 100%;
 	display: table;
-	border-bottom-width: 1px;	
-    border-style:solid;
-    border-bottom-color: #263346;
+    border-bottom: 1px solid #263346;
     opacity: 0.9;
 }
 
 .filmTitle{
 	display: table-cell;
 	vertical-align: middle;
-	padding-left:1.4em;
-	padding-right:1.4em;
+	padding: 0 1.4em;
 }
+
+
+
+.film{
+	background-color: #374760;
+	width: 100%;
+	border-bottom: 1px solid #263346;
+    padding: 1.2em 1.4em;
+	display: inline-block;
+}
+
+
+
+
+
+
+
 
 .time{
 	color: #FFAE00;
 	font-size: 0.875rem; /* =14px */
 	font-style: italic;
-	margin-right:0.4em;
+	display: inline-block;
+	vertical-align: top;
+	width: 2.6rem;
+}
+
+.title{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 3rem);
 }
 
 .name{
 	color: #ffffff;
 	font-size: 1.125rem; /* =18px */
-	margin-right:0.4em;
 	opacity: 0.6;
 	font-weight: 700;
+	display: inline-block;
 }
+
+.author{
+	color: #ffffff;
+	opacity: 0.6;
+	font-size: 0.875rem; /* =14px */
+	display: inline-block;
+}
+
+
+
+
+
+
 
 .nameOpen{
 	color: #ffffff;
@@ -150,12 +176,6 @@ h1   { font-size: 0.1rem; } /* =16px */
 	opacity: 0.9;
 	font-color: red;
 }*/
-
-.author{
-	color: #ffffff;
-	opacity: 0.6;
-	font-size: 0.875rem; /* =14px */
-}
 
 .authorOpen{
 	color: #ffffff;
@@ -240,6 +260,9 @@ padding-top: 50px;
   margin-top: 4px;
 }
 
+/*######## MEDIAQUERIES <3 ########*/
+
+
 @media (max-width: 500px){
 	.tag, .topInfo {
 		float:none;
@@ -264,8 +287,26 @@ padding-top: 50px;
   		margin-bottom: 10px;
   		margin-top: 4px;
 	}
+
+	.author{
+		display: inherit;
+	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*######## FAKE INDEX ########*/
 
 #container.noBG{
 	background-color: transparent;
